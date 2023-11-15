@@ -109,13 +109,12 @@ appContainer.innerHTML = `
     <label>Plot Number:</label>
     <input type="text" name="plotNumber">
 
-    <input type="submit" value="Submit">
 
     <!-- Year Built Input -->
     <label>Year Built:</label>
     <input type="text" name="yearBuilt">
 
-    <input type="submit" value="Submit">
+
 
     <h2>Price Details</h2>
 
