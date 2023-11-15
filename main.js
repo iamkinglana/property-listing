@@ -19,13 +19,15 @@ document.addEventListener('DOMContentLoaded', function () {
 appContainer.innerHTML = `
 
   <form id="myForm">
+  <h1>Sell or Rent your property</h1>
+  <p class = "upper_text" >Bas 2 Minute me property post</p>
 
   <h2>Personal Details</h2>
     <label>I am:</label>
     <p>
-    <input type="radio" name="role" value="owner"> Owner
-    <input type="radio" name="role" value="agent"> Agent
-    <input type="radio" name="role" value="builder"> Builder
+    <input class="radio" type="radio" name="role" value="owner"> Owner
+    <input class="radio" type="radio" name="role" value="agent"> Agent
+    <input class="radio" type="radio" name="role" value="builder"> Builder
     </p>
 
     <p></p>
@@ -126,35 +128,58 @@ appContainer.innerHTML = `
     <input type="text" name="pricePostfix" placeholder="e.g., lacs, thousand">
 
     <h2>Photos</h2>
+    <p>It's Optional But, don't forget to upload them later</p>
 
     <!-- Drag and Drop Input for Photos -->
-    <label>Drag and Drop Photos:</label>
-    <input type="file" name="photos" accept="image/*" multiple>
+    <span class="form-title"> </span>
+    <p class="form-paragraph">
+      Brows or Drag and Drop
+    </p>
+    <label for="file-input" class="drop-container">
+    <span class="drop-title">its like profile pic of your property.</span>
+    <span class="drop-title">It will get more friend request now :</span>
+    <input type="file" name="photos" accept="image/*" multiple id="file-input">
+    </label>
+
+
+
 
     <!-- Button for Adding Photos -->
-    <button type="button">Add Photos</button>
+    <button class="addphoto_button" type="button">Add Photos</button>
 
-    <h2>Attach Property Map/Files</h2>
+    <h3></h3>
 
     <!-- Input for Property Map/Files -->
-    <label>Attach Property Map/Files:</label>
+    <label><b>Attach Property Map/Files:</b></label>
     <input type="file" name="propertyFiles">
 
     <h2>Select Property Features</h2>
+    <div class="check_box">
 
     <!-- Checkboxes for Property Features -->
-    <label><input type="checkbox" name="feature1"> Feature 1</label>
-    <label><input type="checkbox" name="feature2"> Feature 2</label>
-    <label><input type="checkbox" name="feature3"> Feature 3</label>
+    <label><input type="checkbox" name="feature1"> 24 Hours Security</label>
+    <label><input type="checkbox" name="feature2"> Corner Property</label>
+    <label><input type="checkbox" name="feature3"> Near Super Corridor Metro Station</label>
+    <label><input type="checkbox" name="feature3"> Temple</label>
+    <label><input type="checkbox" name="feature3"> 24/7 Power Backup</label>
+    <label><input type="checkbox" name="feature3"> East Facing</label>
+    <label><input type="checkbox" name="feature3"> Jogging Path</label>
+    <label><input type="checkbox" name="feature3"> Near TSC,Infosys</label>
+    <label><input type="checkbox" name="feature3"> Underground Electricity</label>
+    <label><input type="checkbox" name="feature3"> Children's Play Area</label>
+    <label><input type="checkbox" name="feature3"> Garden Facing</label>
+    <label><input type="checkbox" name="feature3"> Near Airport</label>
+    <label><input type="checkbox" name="feature3"> Next to busy way</label>
+    </div>
 
-    <h2>Login and Post Property</h2>
+    <h2>Login and Post Property</h2>'
+    <p class = "upper_text" >In 20 Second you will login and property will be live</p>
 
     <!-- Redirect to Login Button -->
-    <button type="button" id="loginAndPostButton">Login and Post Property</button>
+    <button class="login_postproperty" type="button" id="loginAndPostButton">Login & Post Property</button>
 
     <h2>OTP Verification</h2>
 
-    <!-- OTP Input -->
     <!-- OTP Input -->
     <div class="otp-container">
       <input type="text" class="otp-input" maxlength="1" id="otp1">

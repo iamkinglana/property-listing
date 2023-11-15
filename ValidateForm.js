@@ -19,7 +19,7 @@ export function validateForm() {
   }
 
   if (roleSelected && mobile.trim() === '') {
-    document.getElementById('mobileError').innerHTML = 'Mobile number is required for the selected role';
+    document.getElementById('mobileError').innerHTML = 'Enter your whatsapp numbers. Market is High, Buyers will definately call you';
     return false;
   } else {
     document.getElementById('mobileError').innerHTML = '';

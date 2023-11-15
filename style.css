@@ -26,7 +26,7 @@ input {
     }
 
 input[type="submit"] {
-  background-color: #4CAF50;
+  background-color: #860A35;
   color: white;
   cursor: pointer;
 }
@@ -43,6 +43,7 @@ input[type="submit"]:hover, button:hover {
   background-color: #45a049;
 }
 
+
 .otp-container {
   display: flex;
   align-items: center;
@@ -55,8 +56,138 @@ input[type="submit"]:hover, button:hover {
 
 
 input, select, button {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 16px;
-  box-sizing: border-box;
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 200px;
+  border: none;
+  border-bottom: 1px solid #515151;
+  background: transparent;
+}
+
+input[type="radio"] {
+  background-color: #860A35;
+  color: #860A35;
+  cursor: pointer;
+  visibility: visible;
+}
+
+.upper_text{
+  color: #860A35;
+}
+
+.addphoto_button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 8px;
+  height: 36px;
+  width: 120px;
+  border: none;
+  background: #5e41de33;
+  color: #860A35;
+  border-radius: 20px;
+  cursor: pointer;
+
+}
+
+.login_postproperty{
+  font-size: 1rem;
+ align-items: center;
+ height: 48px;
+ border-radius: 0.4rem;
+ font-weight: 600;
+ padding: 0 1.2rem;
+ color: #ddd;
+ border: none;
+ box-shadow: 0 .5rem 1rem rgba(143, 142, 142, 0.15)!important;
+ background: #b41414;
+
+}
+.check_box{
+  display: grid;
+}
+
+.form {
+  background-color: #fff;
+  box-shadow: 0 10px 60px rgb(218, 229, 255);
+  border: 1px solid rgb(159, 159, 160);
+  border-radius: 20px;
+  padding: 2rem .7rem .7rem .7rem;
+  text-align: center;
+  font-size: 1.125rem;
+  max-width: 320px;
+}
+
+.form-title {
+  color: #000000;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.form-paragraph {
+  margin-top: 10px;
+  font-size: 0.9375rem;
+  color: rgb(105, 105, 105);
+}
+
+.drop-container {
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 2.1875rem;
+  border-radius: 10px;
+  border: 2px dashed rgb(171, 202, 255);
+  color: #444;
+  cursor: pointer;
+  transition: background .2s ease-in-out, border .2s ease-in-out;
+}
+
+.drop-container:hover {
+  background: rgba(0, 140, 255, 0.164);
+  border-color: rgba(17, 17, 17, 0.616);
+}
+
+.drop-container:hover .drop-title {
+  color: #222;
+}
+
+.drop-title {
+  color: #444;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  transition: color .2s ease-in-out;
+}
+
+#file-input {
+  width: 350px;
+  max-width: 100%;
+  color: #444;
+  padding: 2px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid rgba(8, 8, 8, 0.288);
+}
+
+#file-input::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #084cdf;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+  display: none;
+}
+
+#file-input::file-selector-button:hover {
+  background: #0d45a5;
 }
